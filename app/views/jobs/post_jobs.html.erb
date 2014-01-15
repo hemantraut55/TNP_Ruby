@@ -8,11 +8,163 @@
 	  
   </head>
   <body>
-  		<div class="wrapper">
-<form name="jobpostadd" action="/employee" method="post"  >	
+  		
+	<form name="jobpostadd" action="/jobs" method="post"  >	
 	<input name="authenticity_token" type="hidden" value="84fc5f10d45977c87c3ac6b88aabc0e73925cad0" />
+	</br>
+	 <div  align="center" style="margin-left:auto;margin-right:auto;border: solid gray 1px;width:60%;background-color:#FFFFFF">
+	 	<div id="header">Company Information</div>
+	<table width="60%" border="1" align="center">
+		
+		<tr >
+			<td class="inputtext">Company Name</td>
+			<td class="selectbox">
+			<select name="postjob[company_name]" id="company_name">
+				
+			<option>--Select Company--</option>	
+				<option value="1">TCS</option>	
+			</select>
+			</td>
+			
+			<td class="inputtext">Profile Type</td>
+			<td class="inputcontent"><input type="text" name="postjob[profile_type]" id="profile_type"></td>
+		</tr>
+		<tr >
+			<td class="inputtext">Designation</td>
+			<td class="inputcontent"><input type="text" name="postjob[designation]" id="designation"></td>
+			
+			<td class="inputtext">Annual Salary</td>
+			<td class="inputcontent"><input type="text" name="postjob[salary]" name="salary"></td>
+		</tr>
+		<tr >
+			<td class="inputtext">Joining Location</td>
+			<td class="inputcontent"><input type="text" name="postjob[job_location]" id="job_location"></td>
+			
+			<td class="inputtext">Venue</td>
+			<td class="inputcontent"><input type="text" name="postjob[venue]" id="venue"></td>
+		</tr>
+		<tr >
+			<td class="inputtext">Interview Date</td>
+			<td class="inputcontent"><input type="text" name="postjob[interview_date]" id="interview_date"></td>
+			
+			<td class="inputtext">Last Date To Apply</td>
+			<td class="inputcontent"><input type="text" name="postjob[last_date]" id="last_date"></td>
+		</tr>
+		<tr >
+			<td class="inputtext1">Company Profile</td>
+			<td class="textareabox">
+			<textarea name="postjob[company_profile]" id="company_profile"></textarea>
+			</td>
+			
+			
+		</tr>
+		<tr >
+			<td class="inputtext1">Job Details</td>
+			<td class="textareabox">
+			<textarea name="postjob[job_details]" id="job_details"></textarea>
+			</td>
+			
+			<td class="inputtext1">Selection Process</td>
+			<td class="textareabox">
+			<textarea name="postjob[selection_process]" id="selection_process"></textarea>
+			</td>
+			
+		</tr>
+		<tr>
+			<td class="inputtext">Company Logo </td>
+			<td ><input type="file" name="logo"/></td>
+		</tr>
+	</table></br>
+	</div>
+	 <div  align="center" style="margin-left:auto;margin-right:auto;border: solid gray 1px;width:60%;background-color:#FFFFFF">
+	<table width="60%" border="1" align="center">
+	
+			<div id="header">Selection Criteria</div>
+	
+		<tr >
+			<td class="inputtext">Pass Out Year </td>
+			<td class="selectbox">
+			<select name="postjob[passout_year]" id="passout_year">
+				
+			<option>--Select Year--</option>	
+			</select>
+			</td>
+			
+			<td class="inputtext">Bond Period</td>
+			<td class="inputcontent">
+				<input type="text" name="postjob[bond_period]" id="bond_period"></td>
+		</tr>
+		<tr>
+			<td class="inputtext">Branch </td>
+			<td class="selectbox">
+			<select name="postjob[branch]" id="branch">
+				
+			<option>--Select Branch--</option>	
+			</select>
+			</td>
+			<td class="inputtext">Degree </td>
+			<td class="selectbox">
+			<select name="postjob[degree]" id="degree">
+				
+			<option>--Select Deegree--</option>	
+			</select>
+			</td>
+		</tr>
+		<tr >
+			<td class="inputtext"> HSC</td>
+			<td class="inputcontent"><input type="text" name="postjob[hsc_mark]" id="hsc_mark"></td>
+			
+			<td class="inputtext"> SSC</td>
+			<td class="inputcontent"><input type="text" name="postjob[ssc_mark]" id="ssc_mark"></td>
+		</tr>
+		<tr >
+			<td class="inputtext"> Graduation</td>
+			<td class="inputcontent"><input type="text" name="postjob[graduation]" id="graduation"></td>
+			
+			<td class="inputtext"> Post Graduation</td>
+			<td class="inputcontent"><input type="text" name="postjob[post_graduation]" id="post_graduation"></td>
+		</tr>
+		<tr>
+			<td class="inputtext"> Number of live backlogs </td>
+			<td class="selectbox">
+			<select  name="postjob[live_backlog]" id="live_backlog">
+				
+			<option>--Backlogs--</option>	
+			</select>
+			</td>
+			<td class="inputtext">Dead Backlogs </td>
+			<td class="selectbox">
+			<select name="postjob[dead_backlog]" id="dead_backlog">
+				
+			<option>--Dead Backlogs--</option>	
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td class="inputtext"> YD </td>
+			<td class="selectbox">
+			<select name="postjob[yd]" id="yd">
+				
+			<option>--YD--</option>	
+			</select>
+			</td>
+			<td class="inputtext"> Number of offers already</td>
+			<td class="selectbox">
+			<select name="postjob[already_offer]" id="already_offer">
+				
+			<option>--OF--</option>	
+			</select>
+			</td>
+		</tr>
+		</table></div>
+		 
+			<div class="buttons">
 
+				<input class="orangebutton" type="submit" value="Add" />
 
+				<input class="greybutton" type="submit" value="Cancel" />
+
+			</div>
 	</form>
 	</body>
 </html>
